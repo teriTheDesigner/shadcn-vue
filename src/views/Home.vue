@@ -30,7 +30,7 @@ import {
 } from '@/components/ui/dialog'
 </script>
 <template>
-  <main class="grid grid-cols-3 justify-between">
+  <main class="grid grid-cols-3 justify-between m-20">
     <section class="flex flex-col w-52 gap-10">
       <h2 class="text-3xl font-bold mb-8">Buttons</h2>
       <Button>Click me</Button>

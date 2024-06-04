@@ -32,28 +32,30 @@ export default {
 }
 </script>
 <template>
-  <div class="drop-zone" @drop="onDrop($event, 1)" @dragenter.prevent @dragover.prevent>
-    <div
-      v-for="item in getList(1)"
-      :key="item.id"
-      class="drag-el"
-      draggable="true"
-      @dragstart="startDrag($event, item)"
-    >
-      {{ item.title }}
+  <main class="m-20">
+    <div class="drop-zone" @drop="onDrop($event, 1)" @dragenter.prevent @dragover.prevent>
+      <div
+        v-for="item in getList(1)"
+        :key="item.id"
+        class="drag-el"
+        draggable="true"
+        @dragstart="startDrag($event, item)"
+      >
+        {{ item.title }}
+      </div>
     </div>
-  </div>
-  <div class="drop-zone" @drop="onDrop($event, 2)" @dragenter.prevent @dragover.prevent>
-    <div
-      v-for="item in getList(2)"
-      :key="item.id"
-      class="drag-el"
-      draggable="true"
-      @dragstart="startDrag($event, item)"
-    >
-      {{ item.title }}
+    <div class="drop-zone" @drop="onDrop($event, 2)" @dragenter.prevent @dragover.prevent>
+      <div
+        v-for="item in getList(2)"
+        :key="item.id"
+        class="drag-el"
+        draggable="true"
+        @dragstart="startDrag($event, item)"
+      >
+        {{ item.title }}
+      </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <style>

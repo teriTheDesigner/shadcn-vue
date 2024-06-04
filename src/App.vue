@@ -4,6 +4,6 @@
       <router-link to="/">Components</router-link>
       <router-link to="/drag-and-drop">Drag and Drop</router-link>
     </nav>
-    <router-view class="m-20"></router-view>
+    <router-view></router-view>
   </div>
 </template>
